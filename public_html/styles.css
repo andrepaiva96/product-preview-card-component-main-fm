@@ -1,0 +1,29 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* CSS Font Family Rule */
+/* font-family: "Fraunces", serif;
+font-family: "Montserrat", sans-serif; */
+
+/* Text / Typography */
+p{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+h1{
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+}
+
+.test{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
