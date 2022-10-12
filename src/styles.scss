@@ -1,24 +1,24 @@
 /* Body */
-body{
+body {
     background-color: #f3eae3;
 }
 /* Footer Content */
 .attribution {
     font-size: 11px;
     text-align: center;
-}
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+    a {
+        color: hsl(228, 45%, 44%);
+    }
 }
 
 /* Main / Flex Box CSS */
-.container{
+.container {
     display: flex;
     justify-content: center;
 }
 
-.main{
+.main {
     display: flex;
     flex-flow: row wrap;
     width: min(700px);
@@ -27,18 +27,23 @@ body{
     border-radius: 15px;
 }
 
-.left-box{
+.left-box {
+    width: 50%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px 0px 0px 15px;
+    }
+}
+
+.right-box {
     width: 50%;
 }
 
-.left-box img{
-    width: 100%;
-    height: 100%;
-    border-radius: 15px 0px 0px 15px;
-}
-
-.right-box{
-    width: 50%;
+.price {
+    display: flex;
+    flex-flow: row wrap;
 }
 
 /* CSS Font Family Rule */
@@ -46,18 +51,19 @@ body{
 font-family: "Montserrat", sans-serif; */
 
 /* Text / Typography */
-p{
+p {
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
 }
 
-h1{
+.Fraunces {
     font-family: "Fraunces", serif;
     font-weight: 700;
+    font-size: 32px;
 }
 
-.test{
+.test {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
 }
