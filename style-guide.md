@@ -26,10 +26,3 @@ The designs were created to the following widths:
 
 - Font size (paragraph): 14px
 
-### Font
-
-- Family: [Montserrat](https://fonts.google.com/specimen/Montserrat)
-- Weights: 500, 700
-
-- Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
-- Weights: 700
