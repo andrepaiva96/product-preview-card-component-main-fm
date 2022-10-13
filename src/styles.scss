@@ -1,8 +1,9 @@
-/* Body */
+// Body
 body {
     background-color: #f3eae3;
 }
-/* Footer Content */
+
+// Footer Content
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -12,58 +13,119 @@ body {
     }
 }
 
-/* Main / Flex Box CSS */
+// Main / Flex Box CSS
 .container {
     display: flex;
     justify-content: center;
-}
 
-.main {
-    display: flex;
-    flex-flow: row wrap;
-    width: min(700px);
-    min-width: 375px;
-    background-color: white;
-    border-radius: 15px;
-}
+    .main {
+        display: flex;
+        min-width: 375px;
+        width: min(600px);
+        border-radius: 15px;
+        flex-flow: row wrap;
+        background-color: white;
 
-.left-box {
-    width: 50%;
+        .left-box {
+            width: 50%;
 
-    img {
-        width: 100%;
-        height: 100%;
-        border-radius: 15px 0px 0px 15px;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 15px 0px 0px 15px;
+            }
+        }
+
+        .right-box {
+            width: 50%;
+
+            .content {
+                margin: 30px;
+                display: flex;
+                flex-flow: column;
+                height: calc(100% - 60px);
+                justify-content: space-between;
+
+                p {
+                    &.sub-title {
+                        letter-spacing: 5px;
+                    }
+
+                    &.main-text {
+                        line-height: 23px;
+                    }
+                }
+
+                .price {
+                    gap: 20px;
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+
+                    .Fraunces {
+                        color: #3c8067;
+                    }
+                }
+
+                button {
+                    all: unset;
+
+                    width: 100%;
+                    padding: 15px;
+                    display: block;
+                    cursor: pointer;
+                    text-align: center;
+                    border-radius: 10px;
+                    box-sizing: border-box;
+                    background-color: #3c8067;
+
+                    gap: 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 500;
+                    font-family: "Montserrat", sans-serif;
+
+                    &:hover {
+                        background-color: #1a4031;
+                    }
+                }
+            }
+        }
     }
 }
 
-.right-box {
-    width: 50%;
-}
-
-.price {
-    display: flex;
-    flex-flow: row wrap;
-}
-
-/* CSS Font Family Rule */
-/* font-family: "Fraunces", serif;
-font-family: "Montserrat", sans-serif; */
-
-/* Text / Typography */
+// Text / Typography
 p {
+    all: unset;
+
+    color: gray;
+    display: block;
     font-size: 14px;
-    font-family: "Montserrat", sans-serif;
     font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+
+    .bold {
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+    }
 }
 
 .Fraunces {
-    font-family: "Fraunces", serif;
-    font-weight: 700;
+    color: black;
     font-size: 32px;
+    font-weight: 700;
+    font-family: "Fraunces", serif;
 }
 
-.test {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
+// Media Query
+@media only screen and (max-width: 535px) {
+    .container {
+        .main {
+            flex-flow: column wrap;
+        }
+    }
 }
