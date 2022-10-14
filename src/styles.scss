@@ -1,21 +1,29 @@
 // Body
 body {
     background-color: #f3eae3;
+    height: 100vh;
+    margin: auto;
 }
 
 // Footer Content
 .attribution {
+    height: 10%;
+    display: flex;
     font-size: 11px;
     text-align: center;
+    flex-flow: column wrap;
+    justify-content: center;
 
-    a {
+    &a {
         color: hsl(228, 45%, 44%);
     }
 }
 
 // Main / Flex Box CSS
 .container {
+    height: 90%;
     display: flex;
+    align-items: center;
     justify-content: center;
 
     .main {
@@ -70,13 +78,9 @@ body {
                 button {
                     all: unset;
 
-                    width: 100%;
                     padding: 15px;
-                    display: block;
                     cursor: pointer;
-                    text-align: center;
                     border-radius: 10px;
-                    box-sizing: border-box;
                     background-color: #3c8067;
 
                     gap: 15px;
@@ -86,7 +90,6 @@ body {
 
                     color: white;
                     font-size: 14px;
-                    font-weight: 500;
                     font-family: "Montserrat", sans-serif;
 
                     &:hover {
@@ -125,7 +128,38 @@ p {
 @media only screen and (max-width: 535px) {
     .container {
         .main {
+            min-width: auto;
+            width: min(375px);
             flex-flow: column wrap;
+
+            .left-box {
+                width: auto;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 15px 15px 0px 0px;
+                    content: url("/public_html/wp_content/uploads/image-product-mobile.jpg");
+                }
+            }
+
+            .right-box {
+                width: auto;
+
+                .content {
+                    p {
+                        margin: 5px 0px 5px 0px;
+                    }
+    
+                    .price {
+                        margin: 5px 0px 5px 0px;
+                    }
+    
+                    button {
+                        margin: 5px 0px 5px 0px;
+                    }
+                }
+            }
         }
     }
 }
