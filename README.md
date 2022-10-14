@@ -34,7 +34,7 @@ Mobile Screenshot
 ### Links
 
 - GitHub Repo: [https://github.com/andrepaiva96/product-preview-card-component-main-fm](https://github.com/andrepaiva96/product-preview-card-component-main-fm)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://cool-granita-4f1a65.netlify.app/](https://cool-granita-4f1a65.netlify.app/)
 
 ## My process
 
